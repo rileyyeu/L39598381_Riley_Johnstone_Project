@@ -1,0 +1,128 @@
+/* Styling for navbar photo */
+.navbarphoto {
+  width: 8rem;
+}
+
+/* Global reset for margin, padding, and font settings */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+
+/* Styling for stars element */
+#stars {
+  width: 100px;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none;
+}
+
+/* Styling for testimonials section */
+#testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Styling for testimonial heading */
+.testimonial-heading {
+  letter-spacing: 1px;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the span in testimonial heading */
+.testimonial-heading span {
+  font-size: 1.3rem;
+  color: #252525;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Styling for the testimonial box container */
+.testimonial-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Styling for each testimonial box */
+.testimonial-box {
+  width: 500px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+/* Styling for the profile section inside the testimonial box */
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the name-user section */
+.name-user {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for the strong text inside the name-user */
+.name-user strong {
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Styling for the span text inside the name-user */
+.name-user span {
+  color: #979797;
+  font-size: 0.8rem;
+}
+
+/* Styling for reviews rating */
+.reviews {
+  color: #f9d71c;
+}
+
+/* Styling for the top section of each testimonial box */
+.box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for the client comments text */
+.client-comment p {
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+
+/* Hover effect for testimonial box */
+.testimonial-box:hover {
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+
+/* Styling for text selection */
+::selection {
+  color: var(--white);
+  background-color: #252525;
+}

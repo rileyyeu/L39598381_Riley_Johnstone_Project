@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Define CSS Variables */
+:root {
+    --primary-color: #0f1a2c;
+    --secondary-color: #f6ac0f;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --extra-light: #f8fafc;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --header-font: 'Playfair Display', serif;
+}
+
+/* Image styling */
+#img {
+    background: white;
+    margin: 30px 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    overflow: hidden;
+    box-shadow: 0 10px 8px black;
+}
+
+/* Navbar logo image styling */
+.navbarphoto {
+    width: 8rem;
+}
+
+/* Reset default padding, margin, and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Section container layout */
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 80px 16px;
+}
+
+/* Section subheader styling */
+.section__subheader {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+/* Section header styling */
+.section__header {
+    font-size: 48px;
+    font-weight: 800;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+}
+
+/* Section description text */
+.section__description {
+    margin-top: 16px;
+    color: var(--text-light);
+}
+
+/* Button styling */
+.btn {
+    padding: 12px 32px;
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: var(--text-light);
+    letter-spacing: 2px;
+}
+
+.logo div {
+    padding-inline: 12px;
+    font-size: 32px;
+}
+
+/* Media elements styling */
+img, video {
+    width: 100%;
+    display: flex;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+}
+
+/* Smooth scrolling for the page */
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer layout */
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    background-color: var(--extra-light);
+    padding: 2rem 0;
+}
+
+.footer__col {
+    flex: 1;
+    margin-right: 2rem; 
+}
+
+.footer__col:last-child {
+    margin-right: 0; 
+}
+
+/* Columns specific styling for the footer */
+#col1 {
+    margin-bottom: -155px;
+    margin-left: 20px;
+}
+
+#col2 {
+    margin-left: 220px;
+}
+
+/* Footer bar styling */
+.footer__bar {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--extra-light);
+    width: 100%;
+    font-size: 0.9rem;
+}

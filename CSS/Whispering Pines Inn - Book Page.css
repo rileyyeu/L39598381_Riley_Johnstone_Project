@@ -1,0 +1,112 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Define CSS Variables for colors and layout values */
+:root {
+  --primary-color: #2c3855;
+  --primary-color-dark: #435681;
+  --text-dark: #333333;
+  --text-light: #767268;
+  --extra-light: #f3f4f6;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+/* Styling for the pictick (likely an icon or image) */
+#pictick {
+  background-size: contain;
+  width: 20px;
+  border-radius: 50%;
+}
+
+/* Styling for the booking container, likely a form or card */
+.booking__container {
+  position: relative;
+  bottom: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 3rem);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout and styling for the form within the booking container */
+.booking__container form {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styling for input groups inside the container */
+.booking__container .input__group {
+  width: 100%;
+  position: relative;
+}
+
+/* Styling for the labels inside the form */
+.booking__container label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* Styling for the input fields */
+.booking__container input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--text-dark);
+}
+
+/* Label behavior when input is focused */
+.booking__container input:focus ~ label {
+  font-size: 0.8rem;
+  top: 0;
+}
+
+/* Styling for the form groups (each form element like input + label) */
+.booking__container .form__group {
+  margin: 1rem;
+}
+
+/* Paragraph text in the form groups (e.g., error messages or helper text) */
+.booking__container .form__group p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+/* Styling for buttons in the booking container */
+.booking__container .btn {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  background-size: contain;
+}
+
+/* Button hover effect */
+.booking__container .btn:hover {
+  background-color: var(--primary-color-dark);
+}
